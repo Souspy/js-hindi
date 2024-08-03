@@ -1,3 +1,4 @@
+// ***************  CONVERSIONS ********************
 // let score="33abc"
 // console.log(typeof score)
 
@@ -18,7 +19,29 @@ console.log(booleanisLoggedIn)
 // " "=>false
 // "Soum"=>true
 
-let somenumber=12
-let stringsome=String(somenumber)
-console.log(stringsome)
-console.log(typeof(stringsome))
+// let somenumber=12
+// let stringsome=String(somenumber)
+// console.log(stringsome)
+// console.log(typeof(stringsome))
+
+// ################  OPERATIONS ################
+
+let val=5
+let negVal=-val
+console.log(negVal)
+console.log(3**3)
+
+let str1="Hello"
+let str2="Luci"
+//let str3=str1 +str2
+console.log(str1  +str2)
+console.log("1"+2)
+console.log("1"+"2")
+console.log("1"+2+2) // if string is in first tab sabhiko string mana jayega and if string is in last then first do the given operation then do the string operation 
+console.log((1+2)+"2")
+console.log(+true)
+console.log(+"")
+
+let gameCounter=100
+gameCounter++
+console.log(gameCounter)
