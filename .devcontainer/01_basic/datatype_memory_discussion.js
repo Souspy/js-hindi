@@ -33,3 +33,21 @@ const myFunction= function(){
     console.log("Hello World")
 }
 console.log(typeof(myFunction))
+
+
+///..........MEMORY...........
+//Stack(Primitive),  Heap(Non Primitive)
+let myYoutube= "Souspy"
+let anotherName= myYoutube
+anotherName="Devil"
+console.log(anotherName)
+console.log(myYoutube)
+
+let userone={
+    email: "devil@gmail.com",
+    upi:"User@ybl"
+}
+let usertwo=userone // it will get reference from direct one not copy form
+usertwo.email="Sou.com"
+console.log(userone.email)
+console.log(usertwo.email)
