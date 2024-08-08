@@ -10,11 +10,22 @@ let myCreatedDateformat=new Date(2024, 6, 4) // Month start from 0 to 11..
 //console.log(myCreatedDateformat.toDateString())
 //console.log(myCreatedDateformat.toLocaleString())
 let anotherDatteFormat= new Date("04-01-24")
-console.log(anotherDatteFormat.toLocaleString())
+//console.log(anotherDatteFormat.toLocaleString())
 
 let myTimeStamp= Date.now()
 //console.log(myTimeStamp) // Ye timestamp hum poll create karneke time use karenge jab hhumko prize dena padega ki kaun sabse aage submit kiya...
 //console.log(myCreatedDateformat.getTime())
 
-console.log(Date.now()); // It will give present time in milisecond
-console.log(Math.Date.now()/1000)  // To avoid decimal we use math.floor
+//console.log(Date.now()); // It will give present time in milisecond
+//console.log(Math.floor(Date.now()/1000))  // To avoid decimal we use math.floor
+
+let newDate= new Date()
+console.log(newDate)
+console.log(newDate.getMonth()+1)
+console.log(newDate.getDay())
+
+newDate.toLocaleString('default',{
+    weekday:"long",
+})
+
+
