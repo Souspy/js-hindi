@@ -31,6 +31,29 @@ function loginUsermessage(username="Sam"){
     return `${username} just logged in`  //using dolar sign we can write variable name
 }
 
-console.log(loginUsermessage("Ajay"))  // if we doesnt give any value it will automaticaly show undefined
+//console.log(loginUsermessage("Ajay"))  // if we doesnt give any value it will automaticaly show undefined
 
 
+function calculateCartPrice(val1,val2,...num1){  // ... rest operator >> means takes all the numbers and move theminto an array..
+    return num1
+}
+//console.log(calculateCartPrice(200,400,500,2000,5000,6000)) // first two value goes into val1 and val2 rest goes to num1 array
+
+const user={
+    username: 'Som',
+    price:299
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+//handleObject(user)  // it is not necessary to pass function after making it differently.. we can create it laterwords..
+handleObject({
+    username: "Vesak",
+    price:399
+})
+
+const myNewArray=[200,100,400,500]
+function returnsecondvalue(getArray){
+    return getArray[1]
+}
+console.log(returnsecondvalue(myNewArray))
