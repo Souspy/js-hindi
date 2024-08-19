@@ -12,7 +12,28 @@ const user={
 // user.welcomemessage()
 //console.log(this)  // As there have no global context it gives empty o/p
 
-function chai(){
-    console.log(this)
+// function chai(){
+//     console.log(this.username)  //not defined because it works in the objects we can't use inside a function.
+// }
+// chai()
+
+//********* Arrow Function******* */
+
+const chai= () => {  //just use arrow in place of function keyword
+    let username="lyla"
+   // console.log(this)
 }
 chai()
+
+//  Basic Arrow Function(explicit return)
+
+const addTwo= (num1,num2) =>{
+    return num1+num2
+}
+console.log(addTwo(3,4))
+
+// Implicit return...........
+
+const addThree=(num1,num2,num3) => (num1+num2+num3) // if we wrap inside {} then we must write return keyword and if we wrap inside () we don't have to write return keyword
+console.log(addThree(1,2,3))
+
